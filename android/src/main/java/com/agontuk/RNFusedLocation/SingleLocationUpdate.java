@@ -8,10 +8,10 @@ import android.util.Log;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.WritableMap;
 
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationCallback;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationResult;
+import com.huawei.hms.location.FusedLocationProviderClient;
+import com.huawei.hms.location.LocationCallback;
+import com.huawei.hms.location.LocationRequest;
+import com.huawei.hms.location.LocationResult;
 
 import java.lang.RuntimeException;
 

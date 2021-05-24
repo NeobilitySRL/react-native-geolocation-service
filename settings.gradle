@@ -1,0 +1,4 @@
+rootProject.name = 'react-native-geolocation'
+
+include ":react-native-geolocation-lib"
+project(":react-native-geolocation-lib").projectDir = file("./android")

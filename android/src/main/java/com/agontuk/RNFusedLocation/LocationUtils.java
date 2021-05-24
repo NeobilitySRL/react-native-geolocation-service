@@ -13,9 +13,6 @@ import androidx.core.app.ActivityCompat;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
-
 public class LocationUtils {
   /**
    * Check if location permissions are granted.
@@ -29,10 +26,11 @@ public class LocationUtils {
    * Check if google play service is available on device.
    */
   public static boolean isGooglePlayServicesAvailable(Context context) {
-    int result = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(context);
+    return true;
+//    int result = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(context);
 
     // TODO: Handle other possible success types.
-    return result == ConnectionResult.SUCCESS || result == ConnectionResult.SERVICE_UPDATING;
+//    return result == ConnectionResult.SUCCESS || result == ConnectionResult.SERVICE_UPDATING;
   }
 
   /**

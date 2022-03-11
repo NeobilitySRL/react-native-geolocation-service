@@ -25,12 +25,12 @@ android {
 }
 
 dependencies {
-  def googlePlayServicesVersion = safeExtGet('googlePlayServicesVersion', DEFAULT_GOOGLE_PLAY_SERVICES_VERSION)
-  googlePlayServicesVersion = safeExtGet('playServicesVersion', googlePlayServicesVersion)
-  googlePlayServicesVersion = safeExtGet('playServicesLocationVersion', googlePlayServicesVersion)
+  // def googlePlayServicesVersion = safeExtGet('googlePlayServicesVersion', DEFAULT_GOOGLE_PLAY_SERVICES_VERSION)
+  // googlePlayServicesVersion = safeExtGet('playServicesVersion', googlePlayServicesVersion)
+  // googlePlayServicesVersion = safeExtGet('playServicesLocationVersion', googlePlayServicesVersion)
 
   implementation "com.facebook.react:react-native:+"
   implementation 'androidx.appcompat:appcompat:1.0.2'
-  implementation "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
+  // implementation "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
   implementation 'com.huawei.hms:location:5.1.0.303'
 }

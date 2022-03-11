@@ -166,7 +166,7 @@ public class RNFusedLocationModule extends ReactContextBaseJavaModule {
     if (!LocationUtils.isGooglePlayServicesAvailable(context)) {
       invokeError(
         LocationError.PLAY_SERVICE_NOT_AVAILABLE.getValue(),
-        "Google play service is not available.",
+        "Google play service is not available in HMS.",
         true
       );
       return;
@@ -223,7 +223,7 @@ public class RNFusedLocationModule extends ReactContextBaseJavaModule {
     if (!LocationUtils.isGooglePlayServicesAvailable(context)) {
       invokeError(
         LocationError.PLAY_SERVICE_NOT_AVAILABLE.getValue(),
-        "Google play service is not available.",
+        "Google play service is not available in HMS.",
         false
       );
       return;
